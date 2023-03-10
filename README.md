@@ -19,4 +19,19 @@ another option:
     "extends": "./node_modules/standard/eslintrc.json"
 }
 
-We can see an example in index.js (errors dissapear on saving file)
+We can see an example in index.js (errors dissapear on saving file) or in App.jsx (React example)
+
+--------------------------------------------
+
+we can extend standard config by installing some dependencies (this is used by midudev):
+
+npm i -D babel-eslint eslint-config-standard eslint-config-standard-jsx eslint-config-standard-react eslint-plugin-promise eslint-plugin-import eslint-plugin-node eslint-plugin-react   
+
+maybe I need npm i -D @babel/core
+
+and now we can add in package.json:
+
+"eslintConfig": {
+    "parser": "babel-eslint"
+    "extends": ["standard", "standard-jsx", "standard-react"]
+}
