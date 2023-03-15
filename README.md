@@ -9,7 +9,7 @@ How to configure eslint:
 
 --------------------------------------------
 
-another option:
+another option (preferred):
 
 1) remove .eslintrc file
 2) uninstall previous dependencies
@@ -32,6 +32,6 @@ maybe I need npm i -D @babel/core
 and now we can add in package.json:
 
 "eslintConfig": {
-    "parser": "babel-eslint"
+    "parser": "babel-eslint",
     "extends": ["standard", "standard-jsx", "standard-react"]
 }
