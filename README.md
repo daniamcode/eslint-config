@@ -29,9 +29,23 @@ npm i -D babel-eslint eslint-config-standard eslint-config-standard-jsx eslint-c
 
 maybe I need npm i -D @babel/core
 
+and if we use typescrit: npm i -D @typescript-eslint/parser @typescript-eslint/eslint-plugin typescript
+
 and now we can add in package.json:
 
 "eslintConfig": {
     "parser": "babel-eslint",
-    "extends": ["standard", "standard-jsx", "standard-react"]
+    "extends": [
+        "standard", 
+        "standard-jsx", 
+        "standard-react", 
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "globals": {
+      "React": true
+    }
+
 }
