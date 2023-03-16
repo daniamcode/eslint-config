@@ -5,7 +5,7 @@ How to configure eslint:
 2) add .eslintrc file with rules
 3) npm i -D @babel/eslint-parser eslint eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-react
 
-4) add babel.config.js file if needed
+4) add babel.config.js file if needed (I don't need it for now)
 
 --------------------------------------------
 
@@ -25,7 +25,7 @@ We can see an example in index.js (errors dissapear on saving file) or in App.js
 
 we can extend standard config by installing some dependencies (this is used by midudev):
 
-npm i -D babel-eslint eslint-config-standard eslint-config-standard-jsx eslint-config-standard-react eslint-plugin-promise eslint-plugin-import eslint-plugin-node eslint-plugin-react   
+npm i -D @babel/eslint-parser eslint-config-standard eslint-config-standard-jsx eslint-config-standard-react eslint-plugin-promise eslint-plugin-import eslint-plugin-node eslint-plugin-react   
 
 maybe I need npm i -D @babel/core
 
@@ -34,7 +34,7 @@ and if we use typescrit: npm i -D @typescript-eslint/parser @typescript-eslint/e
 and now we can add in package.json:
 
 "eslintConfig": {
-    "parser": "babel-eslint",
+    "parser": "@babel/eslint-parser",
     "extends": [
         "standard", 
         "standard-jsx", 
